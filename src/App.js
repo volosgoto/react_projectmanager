@@ -19,7 +19,7 @@ class App extends Component {
     return (
       <div className="App">
         My app
-        <Projects projects = {this.state.projects} />
+        <Projects projects = { this.state.projects } />
       </div>
     );
   }
