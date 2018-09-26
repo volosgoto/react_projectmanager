@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+      "target": "ES6"
+  },
+  "exclude": [
+      "node_modules",
+      "**/node_modules/*"
+  ]
+}
+
+// ES7 React/Redux/GraphQL/React-Native snippets
