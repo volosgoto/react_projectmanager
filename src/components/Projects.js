@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import ProjectItem from './ProjectItem'
 
 class Projects extends Component {
-  
+  deleteProject(id) {
+    this.props.onDelete(id);
+  }
+
   render() {
     let projectItems;    
     if (this.props.projects) {
@@ -10,6 +13,7 @@ class Projects extends Component {
               // console.log(project);
               return (
                 <ProjectItem 
+                  onDelete = {this.deleteProject.bind(this)}
                   key={project.title} 
                   project = {project} 
                 />
