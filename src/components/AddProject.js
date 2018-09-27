@@ -29,9 +29,6 @@ class AddProject extends Component {
         this.props.addProject(this.state.newProject);
       }); 
     }
-
-
-
     e.preventDefault();
   }
 
@@ -64,5 +61,11 @@ class AddProject extends Component {
       
   }
 }
+
+
+// AddProject.propTypes = {
+//   categories: React.PropTypes.object,
+//   addProject: React.PropTypes.func
+// }
 
 export default AddProject;

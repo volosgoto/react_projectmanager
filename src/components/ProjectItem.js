@@ -18,4 +18,10 @@ import React, { Component } from 'react'
   }
 }
 
+// ProjectItem.propTypes = {
+//   project: React.PropTypes.object,
+//   onDelete: React.PropTypes.func
+// }
+
+
 export default ProjectItem;
