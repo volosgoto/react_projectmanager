@@ -12,7 +12,7 @@ class App extends Component {
     }
   }
 
-  componentWillMount(){
+  componentWillMount(){ // Alt to constructor()
     this.setState({
       projects: [
         {title: 'Corporation web site', category: 'Web design'},
@@ -21,7 +21,7 @@ class App extends Component {
       ]
     })
   }
-  
+   
   render() {
 
     return (
