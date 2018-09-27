@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Projects from './components/Projects'
 import AddProject from './components/AddProject'
+import uuid from 'uuid';
 
 import './App.css';
 
@@ -15,9 +16,9 @@ class App extends Component {
   componentWillMount(){ // Alt to constructor()
     this.setState({
       projects: [
-        {title: 'Corporation web site', category: 'Web design'},
-        {title: 'Mobile App ', category: 'Mobile Development'},
-        {title: 'Ecommerce cart', category: 'Web design'}
+        {id: uuid.v4(), title: 'Corporation web site', category: 'Web design'},
+        {id: uuid.v4(), title: 'Mobile App ', category: 'Mobile Development'},
+        {id: uuid.v4(), title: 'Ecommerce cart', category: 'Web design'}
       ]
     })
   }
