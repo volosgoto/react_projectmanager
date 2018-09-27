@@ -23,7 +23,8 @@ class AddProject extends Component {
         category: this.refs.category.value 
        }}, 
        function () {
-        console.log(this.state);
+        // console.log(this.state);
+        this.props.addProject(this.state.newProject);
       }); 
     }
 
@@ -52,7 +53,9 @@ class AddProject extends Component {
               {categoryOptions}
             </select>
           </div>
+          <br/>
           <input type="submit" value="Submit"/>
+          <br/>
         </form>
       </div>
     );

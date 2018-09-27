@@ -19,6 +19,7 @@ class Projects extends Component {
     //  console.log(this.props);  // to call properties
     return (
       <div className="Projects">
+        <h3>Latest Projects</h3>
         { projectItems }
       </div>
     );
